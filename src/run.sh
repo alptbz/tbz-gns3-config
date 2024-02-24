@@ -7,14 +7,15 @@ if [ -f "$INSTALLED_FILE" ]; then
     exit 1
 fi 
 
-
 CURR_DIR=$(dirname $0)
 
-bash $CURRDIR/local-image-download-install.sh
+bash $CURR_DIR/local-image-download-install.sh
 
 systemctl disable /opt/cloudinitinstall/tbz-gns3-config/src/tbz-gns3-config.service
 logger "Disabled tbz-gns3-config.service"
 
 touch $INSTALLED_FILE
+
+sleep 5
 
 reboot
