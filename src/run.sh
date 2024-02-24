@@ -16,3 +16,5 @@ systemctl disable /opt/cloudinitinstall/tbz-gns3-config/src/tbz-gns3-config.serv
 logger "Disabled tbz-gns3-config.service"
 
 touch $INSTALLED_FILE
+
+reboot
