@@ -1,0 +1,107 @@
+{
+    "images":[
+        {
+            "name": "c3600",
+            "config": "c3660-a3jk9s-mz.124-19.image.json",
+            "images": ["c3660-a3jk9s-mz.124-19.image"],
+            "base": "IOS"
+        },
+        {
+            "name": "c3725",
+            "config": "c3725-adventerprisek9-mz.124-25d.image.json",
+            "images": ["c3725-adventerprisek9-mz.124-25d.image"],
+            "base": "IOS"
+        },
+        {
+            "name": "c3745",
+            "config": "c3745-adventerprisek9-mz.124-25d.image.json",
+            "images": ["c3745-adventerprisek9-mz.124-25d.image"],
+            "base": "IOS"
+        },
+        {
+            "name": "c7200",
+            "config": "c7200-adventerprisek9-mz.124-24.T5.image.json",
+            "images": ["c7200-adventerprisek9-mz.124-24.T5.image"],
+            "base": "IOS"
+        },
+        {
+            "name": "MikroTik CHR 7.5",
+            "config": "chr-7.5.img.json",
+            "images": ["chr-7.5.img"],
+            "base": "QEMU"
+        },
+        {
+            "name": "MikroTik CHR 7.7",
+            "config": "chr-7.7.img.json",
+            "images": ["chr-7.7.img"],
+            "base": "QEMU"
+        },
+        {
+            "name": "Debian 11.4",
+            "config": "debian-11-genericcloud-amd64-20220711-1073.qcow2.json",
+            "images": ["debian-11-genericcloud-amd64-20220711-1073.qcow2", "debian-cloud-init-data.iso"],
+            "base": "QEMU"
+        },
+        {
+            "name": "Micro Core Linux 6.4",
+            "config": "linux-microcore-6.4.img.json",
+            "images": ["linux-microcore-6.4.img"],
+            "base": "QEMU"
+        },
+        {
+            "name": "Windows 10 w/ Edge",
+            "config": "MSEdge-Win10-VMware-disk1.vmdk.json",
+            "images": ["MSEdge-Win10-VMware-disk1.vmdk"],
+            "base": "QEMU"
+        },
+        {
+            "name": "OPNsense 20.7",
+            "config": "OPNsense-20.7-OpenSSL-nano-amd64.img.json",
+            "images": ["OPNsense-20.7-OpenSSL-nano-amd64.img"],
+            "base": "QEMU"
+        },
+        {
+            "name": "pfSense 2.4.5-p1",
+            "config": "pfSense-CE-2.4.5-RELEASE-p1-amd64.iso.json",
+            "images": ["pfSense-CE-2.4.5-RELEASE-p1-amd64.iso", "empty100G.qcow2"],
+            "base": "QEMU"
+        },
+        {
+            "name": "pfSense 2.6.0",
+            "config": "pfSense-CE-2.6.0-RELEASE-amd64.iso.json",
+            "images": ["pfSense-CE-2.6.0-RELEASE-amd64.iso", "empty100G.qcow2"],
+            "base": "QEMU"
+        },
+        {
+            "name": "TrueNAS 13.0-U3",
+            "config": "TrueNAS-13.0-U3.iso.json",
+            "images": ["TrueNAS-13.0-U3.iso", "empty30G.qcow2"],
+            "base": "QEMU"
+        },
+        {
+            "name": "Ubuntu Desktop Guest 22.04",
+            "config": "Ubuntu_22.04_64bit.vmdk.json",
+            "images": ["Ubuntu_22.04_64bit.vmdk"],
+            "base": "QEMU"
+        },
+        {
+            "name": "Cisco IOSvL2 15.2(20200924:215240)",
+            "config": "vios_l2-adventerprisek9-m.ssa.high_iron_20200929.qcow2.json",
+            "images": ["vios_l2-adventerprisek9-m.ssa.high_iron_20200929.qcow2"],
+            "base": "QEMU"
+        },
+        {
+            "name": "Cisco IOSv 15.9(3)M3",
+            "config": "vios-adventerprisek9-m.spa.159-3.m3.qcow2.json",
+            "images": ["vios-adventerprisek9-m.spa.159-3.m3.qcow2", "IOSv_startup_config.img"],
+            "base": "QEMU"
+        },
+        {
+            "name": "Cisco IOSv 15.6(1)T",
+            "config": "vios-adventerprisek9-m.vmdk.SPA.156-1.T.json",
+            "images": ["vios-adventerprisek9-m.vmdk.SPA.156-1.T", "IOSv_startup_config.img"],
+            "base": "QEMU"
+        }
+    ]
+    
+    }
