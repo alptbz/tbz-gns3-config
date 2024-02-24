@@ -2,5 +2,9 @@
 
 CURR_DIR=$(dirname $0)
 
-systemctl enable /opt/cloudinitinstall/tbz-gns3-config/src/download-install-gns3-templates.service
+bash $CURRDIR/local-image-download-install.sh
 
+systemctl disable /opt/cloudinitinstall/tbz-gns3-config/src/tbz-gns3-config.service
+
+logger "Disabled tbz-gns3-config.service"
+touch /opt/cloudinitinstall/tbz-gns3-config.installed

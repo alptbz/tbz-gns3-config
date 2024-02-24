@@ -252,5 +252,4 @@ curl -X POST "http://${GNS3_SERVER}:3080/v2/templates" -d "$gns3_template16"
 logger "Installed Cisco IOSv 15.6(1)T"
 
 
-systemctl disable /opt/cloudinitinstall/tbz-gns3-config/src/download-install-gns3-templates.service
 touch /opt/cloudinitinstall/images.installed

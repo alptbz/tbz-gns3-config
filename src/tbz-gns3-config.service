@@ -1,5 +1,5 @@
 [Unit]
-Description=Install GNS3 images
+Description=TBZ GNS3 Config Service
 Wants=network-online.target
 After=network-online.target
 
