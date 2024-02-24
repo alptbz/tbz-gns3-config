@@ -11,6 +11,8 @@ CURR_DIR=$(dirname $0)
 
 bash $CURR_DIR/local-image-download-install.sh
 
+chown -R gns3:gns3 /opt/gns3/images/
+
 systemctl disable /opt/cloudinitinstall/tbz-gns3-config/src/tbz-gns3-config.service
 logger "Disabled tbz-gns3-config.service"
 
