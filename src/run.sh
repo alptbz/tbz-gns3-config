@@ -9,7 +9,11 @@ fi
 
 CURR_DIR=$(dirname $0)
 
+# Install basic images
 bash $CURR_DIR/local-image-download-install.sh
+
+# Install LernMAAS images
+bash $CURR_DIR/lernmaas.sh
 
 chown -R gns3:gns3 /opt/gns3/images/
 
