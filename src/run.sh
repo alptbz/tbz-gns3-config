@@ -2,4 +2,5 @@
 
 CURR_DIR=$(dirname $0)
 
-bash $CURR_DIR/local-image-download-install.sh
+systemctl enable /opt/cloudinitinstall/tbz-gns3-config/src/download-install-gns3-templates.service
+

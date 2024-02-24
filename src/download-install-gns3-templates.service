@@ -1,0 +1,14 @@
+[Unit]
+Description=Install GNS3 images
+Wants=network-online.target
+After=network-online.target
+
+[Install]
+WantedBy=multi-user.target
+
+[Service]
+Type=oneshot
+ExecStart=/bin/bash /opt/cloudinitinstall/tbz-gns3-config/src/local-image-download-install.sh
+WorkingDirectory=/opt/cloudinitinstall/tbz-gns3-config/
+
+
