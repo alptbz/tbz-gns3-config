@@ -251,6 +251,18 @@ gns3_template16=$(curl -s "http://10.0.33.2/images/QEMU/vios-adventerprisek9-m.v
 curl -X POST "http://${GNS3_SERVER}:3080/v2/templates" -d "$gns3_template16"
 logger "Installed Cisco IOSv 15.6(1)T"
 
+logger "Downloading and installing OpenWrt 23.05.0"...
+curl "http://10.0.33.2/images/QEMU/openwrt-23.05.0-x86-64-generic-ext4-combined.img.tar.gz" -o "openwrt-23.05.0-x86-64-generic-ext4-combined.img.tar.gz"
+tar -x --use-compress-program=pigz -v -f "openwrt-23.05.0-x86-64-generic-ext4-combined.img.tar.gz" -C "/opt/gns3/images/QEMU"
+rm "openwrt-23.05.0-x86-64-generic-ext4-combined.img.tar.gz"
+chown gns3:gns3 "/opt/gns3/images/QEMU/openwrt-23.05.0-x86-64-generic-ext4-combined.img"
+chmod 644 "/opt/gns3/images/QEMU/openwrt-23.05.0-x86-64-generic-ext4-combined.img"
+md5sum "/opt/gns3/images/QEMU/openwrt-23.05.0-x86-64-generic-ext4-combined.img" | awk '{print $1}' | tr -d '\n' > "/opt/gns3/images/QEMU/openwrt-23.05.0-x86-64-generic-ext4-combined.img.md5sum"
+
+gns3_template17=$(curl -s "http://10.0.33.2/images/QEMU/openwrt-23.05.0-x86-64-generic-ext4-combined.img.json")
+curl -X POST "http://${GNS3_SERVER}:3080/v2/templates" -d "$gns3_template17"
+logger "Installed OpenWrt 23.05.0"
+
 
 systemctl disable /opt/cloudinitinstall/tbz-gns3-config/src/download-install-gns3-templates.service
 touch /opt/cloudinitinstall/images.installed
