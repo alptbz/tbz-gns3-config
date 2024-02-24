@@ -24,7 +24,7 @@ for image in configdata["images"]:
         lines.append(f'rm "{image_file}.tar.gz"')
         lines.append(f'chown gns3:gns3 "/opt/gns3/images/{image["base"]}/{image_file}"')
         lines.append(f'chmod 644 "/opt/gns3/images/{image["base"]}/{image_file}"')
-        lines.append(f'md5sum "/opt/gns3/images/{image["base"]}/{image_file}" > "/opt/gns3/images/{image["base"]}/{image_file}.md5sum"')
+        lines.append(f'md5sum "/opt/gns3/images/{image["base"]}/{image_file}"' + " | awk '{print $1}' | " + f'tr -d \'\\n\' > "/opt/gns3/images/{image["base"]}/{image_file}.md5sum"')
         lines.append('')
     lines.append(f'gns3_template{i}=$(curl -s "{BASE_URLS[image["base"]]}{image["config"]}")')
     lines.append('curl -X POST "http://${GNS3_SERVER}:3080/v2/templates" -d "$gns3_template' + str(i) + '"')

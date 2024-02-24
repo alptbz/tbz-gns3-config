@@ -11,7 +11,7 @@ tar -x --use-compress-program=pigz -v -f "c3660-a3jk9s-mz.124-19.image.tar.gz" -
 rm "c3660-a3jk9s-mz.124-19.image.tar.gz"
 chown gns3:gns3 "/opt/gns3/images/IOS/c3660-a3jk9s-mz.124-19.image"
 chmod 644 "/opt/gns3/images/IOS/c3660-a3jk9s-mz.124-19.image"
-md5sum "/opt/gns3/images/IOS/c3660-a3jk9s-mz.124-19.image" > "/opt/gns3/images/IOS/c3660-a3jk9s-mz.124-19.image.md5sum"
+md5sum "/opt/gns3/images/IOS/c3660-a3jk9s-mz.124-19.image" | awk '{print $1}' | tr -d '\n' > "/opt/gns3/images/IOS/c3660-a3jk9s-mz.124-19.image.md5sum"
 
 gns3_template0=$(curl -s "http://10.0.33.2/images/IOS/c3660-a3jk9s-mz.124-19.image.json")
 curl -X POST "http://${GNS3_SERVER}:3080/v2/templates" -d "$gns3_template0"
@@ -23,7 +23,7 @@ tar -x --use-compress-program=pigz -v -f "c3725-adventerprisek9-mz.124-25d.image
 rm "c3725-adventerprisek9-mz.124-25d.image.tar.gz"
 chown gns3:gns3 "/opt/gns3/images/IOS/c3725-adventerprisek9-mz.124-25d.image"
 chmod 644 "/opt/gns3/images/IOS/c3725-adventerprisek9-mz.124-25d.image"
-md5sum "/opt/gns3/images/IOS/c3725-adventerprisek9-mz.124-25d.image" > "/opt/gns3/images/IOS/c3725-adventerprisek9-mz.124-25d.image.md5sum"
+md5sum "/opt/gns3/images/IOS/c3725-adventerprisek9-mz.124-25d.image" | awk '{print $1}' | tr -d '\n' > "/opt/gns3/images/IOS/c3725-adventerprisek9-mz.124-25d.image.md5sum"
 
 gns3_template1=$(curl -s "http://10.0.33.2/images/IOS/c3725-adventerprisek9-mz.124-25d.image.json")
 curl -X POST "http://${GNS3_SERVER}:3080/v2/templates" -d "$gns3_template1"
@@ -35,7 +35,7 @@ tar -x --use-compress-program=pigz -v -f "c3745-adventerprisek9-mz.124-25d.image
 rm "c3745-adventerprisek9-mz.124-25d.image.tar.gz"
 chown gns3:gns3 "/opt/gns3/images/IOS/c3745-adventerprisek9-mz.124-25d.image"
 chmod 644 "/opt/gns3/images/IOS/c3745-adventerprisek9-mz.124-25d.image"
-md5sum "/opt/gns3/images/IOS/c3745-adventerprisek9-mz.124-25d.image" > "/opt/gns3/images/IOS/c3745-adventerprisek9-mz.124-25d.image.md5sum"
+md5sum "/opt/gns3/images/IOS/c3745-adventerprisek9-mz.124-25d.image" | awk '{print $1}' | tr -d '\n' > "/opt/gns3/images/IOS/c3745-adventerprisek9-mz.124-25d.image.md5sum"
 
 gns3_template2=$(curl -s "http://10.0.33.2/images/IOS/c3745-adventerprisek9-mz.124-25d.image.json")
 curl -X POST "http://${GNS3_SERVER}:3080/v2/templates" -d "$gns3_template2"
@@ -47,7 +47,7 @@ tar -x --use-compress-program=pigz -v -f "c7200-adventerprisek9-mz.124-24.T5.ima
 rm "c7200-adventerprisek9-mz.124-24.T5.image.tar.gz"
 chown gns3:gns3 "/opt/gns3/images/IOS/c7200-adventerprisek9-mz.124-24.T5.image"
 chmod 644 "/opt/gns3/images/IOS/c7200-adventerprisek9-mz.124-24.T5.image"
-md5sum "/opt/gns3/images/IOS/c7200-adventerprisek9-mz.124-24.T5.image" > "/opt/gns3/images/IOS/c7200-adventerprisek9-mz.124-24.T5.image.md5sum"
+md5sum "/opt/gns3/images/IOS/c7200-adventerprisek9-mz.124-24.T5.image" | awk '{print $1}' | tr -d '\n' > "/opt/gns3/images/IOS/c7200-adventerprisek9-mz.124-24.T5.image.md5sum"
 
 gns3_template3=$(curl -s "http://10.0.33.2/images/IOS/c7200-adventerprisek9-mz.124-24.T5.image.json")
 curl -X POST "http://${GNS3_SERVER}:3080/v2/templates" -d "$gns3_template3"
@@ -59,7 +59,7 @@ tar -x --use-compress-program=pigz -v -f "chr-7.5.img.tar.gz" -C "/opt/gns3/imag
 rm "chr-7.5.img.tar.gz"
 chown gns3:gns3 "/opt/gns3/images/QEMU/chr-7.5.img"
 chmod 644 "/opt/gns3/images/QEMU/chr-7.5.img"
-md5sum "/opt/gns3/images/QEMU/chr-7.5.img" > "/opt/gns3/images/QEMU/chr-7.5.img.md5sum"
+md5sum "/opt/gns3/images/QEMU/chr-7.5.img" | awk '{print $1}' | tr -d '\n' > "/opt/gns3/images/QEMU/chr-7.5.img.md5sum"
 
 gns3_template4=$(curl -s "http://10.0.33.2/images/QEMU/chr-7.5.img.json")
 curl -X POST "http://${GNS3_SERVER}:3080/v2/templates" -d "$gns3_template4"
@@ -71,7 +71,7 @@ tar -x --use-compress-program=pigz -v -f "chr-7.7.img.tar.gz" -C "/opt/gns3/imag
 rm "chr-7.7.img.tar.gz"
 chown gns3:gns3 "/opt/gns3/images/QEMU/chr-7.7.img"
 chmod 644 "/opt/gns3/images/QEMU/chr-7.7.img"
-md5sum "/opt/gns3/images/QEMU/chr-7.7.img" > "/opt/gns3/images/QEMU/chr-7.7.img.md5sum"
+md5sum "/opt/gns3/images/QEMU/chr-7.7.img" | awk '{print $1}' | tr -d '\n' > "/opt/gns3/images/QEMU/chr-7.7.img.md5sum"
 
 gns3_template5=$(curl -s "http://10.0.33.2/images/QEMU/chr-7.7.img.json")
 curl -X POST "http://${GNS3_SERVER}:3080/v2/templates" -d "$gns3_template5"
@@ -83,14 +83,14 @@ tar -x --use-compress-program=pigz -v -f "debian-11-genericcloud-amd64-20220711-
 rm "debian-11-genericcloud-amd64-20220711-1073.qcow2.tar.gz"
 chown gns3:gns3 "/opt/gns3/images/QEMU/debian-11-genericcloud-amd64-20220711-1073.qcow2"
 chmod 644 "/opt/gns3/images/QEMU/debian-11-genericcloud-amd64-20220711-1073.qcow2"
-md5sum "/opt/gns3/images/QEMU/debian-11-genericcloud-amd64-20220711-1073.qcow2" > "/opt/gns3/images/QEMU/debian-11-genericcloud-amd64-20220711-1073.qcow2.md5sum"
+md5sum "/opt/gns3/images/QEMU/debian-11-genericcloud-amd64-20220711-1073.qcow2" | awk '{print $1}' | tr -d '\n' > "/opt/gns3/images/QEMU/debian-11-genericcloud-amd64-20220711-1073.qcow2.md5sum"
 
 curl "http://10.0.33.2/images/QEMU/debian-cloud-init-data.iso.tar.gz" -o "debian-cloud-init-data.iso.tar.gz"
 tar -x --use-compress-program=pigz -v -f "debian-cloud-init-data.iso.tar.gz" -C "/opt/gns3/images/QEMU"
 rm "debian-cloud-init-data.iso.tar.gz"
 chown gns3:gns3 "/opt/gns3/images/QEMU/debian-cloud-init-data.iso"
 chmod 644 "/opt/gns3/images/QEMU/debian-cloud-init-data.iso"
-md5sum "/opt/gns3/images/QEMU/debian-cloud-init-data.iso" > "/opt/gns3/images/QEMU/debian-cloud-init-data.iso.md5sum"
+md5sum "/opt/gns3/images/QEMU/debian-cloud-init-data.iso" | awk '{print $1}' | tr -d '\n' > "/opt/gns3/images/QEMU/debian-cloud-init-data.iso.md5sum"
 
 gns3_template6=$(curl -s "http://10.0.33.2/images/QEMU/debian-11-genericcloud-amd64-20220711-1073.qcow2.json")
 curl -X POST "http://${GNS3_SERVER}:3080/v2/templates" -d "$gns3_template6"
@@ -102,7 +102,7 @@ tar -x --use-compress-program=pigz -v -f "linux-microcore-6.4.img.tar.gz" -C "/o
 rm "linux-microcore-6.4.img.tar.gz"
 chown gns3:gns3 "/opt/gns3/images/QEMU/linux-microcore-6.4.img"
 chmod 644 "/opt/gns3/images/QEMU/linux-microcore-6.4.img"
-md5sum "/opt/gns3/images/QEMU/linux-microcore-6.4.img" > "/opt/gns3/images/QEMU/linux-microcore-6.4.img.md5sum"
+md5sum "/opt/gns3/images/QEMU/linux-microcore-6.4.img" | awk '{print $1}' | tr -d '\n' > "/opt/gns3/images/QEMU/linux-microcore-6.4.img.md5sum"
 
 gns3_template7=$(curl -s "http://10.0.33.2/images/QEMU/linux-microcore-6.4.img.json")
 curl -X POST "http://${GNS3_SERVER}:3080/v2/templates" -d "$gns3_template7"
@@ -114,7 +114,7 @@ tar -x --use-compress-program=pigz -v -f "MSEdge-Win10-VMware-disk1.vmdk.tar.gz"
 rm "MSEdge-Win10-VMware-disk1.vmdk.tar.gz"
 chown gns3:gns3 "/opt/gns3/images/QEMU/MSEdge-Win10-VMware-disk1.vmdk"
 chmod 644 "/opt/gns3/images/QEMU/MSEdge-Win10-VMware-disk1.vmdk"
-md5sum "/opt/gns3/images/QEMU/MSEdge-Win10-VMware-disk1.vmdk" > "/opt/gns3/images/QEMU/MSEdge-Win10-VMware-disk1.vmdk.md5sum"
+md5sum "/opt/gns3/images/QEMU/MSEdge-Win10-VMware-disk1.vmdk" | awk '{print $1}' | tr -d '\n' > "/opt/gns3/images/QEMU/MSEdge-Win10-VMware-disk1.vmdk.md5sum"
 
 gns3_template8=$(curl -s "http://10.0.33.2/images/QEMU/MSEdge-Win10-VMware-disk1.vmdk.json")
 curl -X POST "http://${GNS3_SERVER}:3080/v2/templates" -d "$gns3_template8"
@@ -126,7 +126,7 @@ tar -x --use-compress-program=pigz -v -f "OPNsense-20.7-OpenSSL-nano-amd64.img.t
 rm "OPNsense-20.7-OpenSSL-nano-amd64.img.tar.gz"
 chown gns3:gns3 "/opt/gns3/images/QEMU/OPNsense-20.7-OpenSSL-nano-amd64.img"
 chmod 644 "/opt/gns3/images/QEMU/OPNsense-20.7-OpenSSL-nano-amd64.img"
-md5sum "/opt/gns3/images/QEMU/OPNsense-20.7-OpenSSL-nano-amd64.img" > "/opt/gns3/images/QEMU/OPNsense-20.7-OpenSSL-nano-amd64.img.md5sum"
+md5sum "/opt/gns3/images/QEMU/OPNsense-20.7-OpenSSL-nano-amd64.img" | awk '{print $1}' | tr -d '\n' > "/opt/gns3/images/QEMU/OPNsense-20.7-OpenSSL-nano-amd64.img.md5sum"
 
 gns3_template9=$(curl -s "http://10.0.33.2/images/QEMU/OPNsense-20.7-OpenSSL-nano-amd64.img.json")
 curl -X POST "http://${GNS3_SERVER}:3080/v2/templates" -d "$gns3_template9"
@@ -138,14 +138,14 @@ tar -x --use-compress-program=pigz -v -f "pfSense-CE-2.4.5-RELEASE-p1-amd64.iso.
 rm "pfSense-CE-2.4.5-RELEASE-p1-amd64.iso.tar.gz"
 chown gns3:gns3 "/opt/gns3/images/QEMU/pfSense-CE-2.4.5-RELEASE-p1-amd64.iso"
 chmod 644 "/opt/gns3/images/QEMU/pfSense-CE-2.4.5-RELEASE-p1-amd64.iso"
-md5sum "/opt/gns3/images/QEMU/pfSense-CE-2.4.5-RELEASE-p1-amd64.iso" > "/opt/gns3/images/QEMU/pfSense-CE-2.4.5-RELEASE-p1-amd64.iso.md5sum"
+md5sum "/opt/gns3/images/QEMU/pfSense-CE-2.4.5-RELEASE-p1-amd64.iso" | awk '{print $1}' | tr -d '\n' > "/opt/gns3/images/QEMU/pfSense-CE-2.4.5-RELEASE-p1-amd64.iso.md5sum"
 
 curl "http://10.0.33.2/images/QEMU/empty100G.qcow2.tar.gz" -o "empty100G.qcow2.tar.gz"
 tar -x --use-compress-program=pigz -v -f "empty100G.qcow2.tar.gz" -C "/opt/gns3/images/QEMU"
 rm "empty100G.qcow2.tar.gz"
 chown gns3:gns3 "/opt/gns3/images/QEMU/empty100G.qcow2"
 chmod 644 "/opt/gns3/images/QEMU/empty100G.qcow2"
-md5sum "/opt/gns3/images/QEMU/empty100G.qcow2" > "/opt/gns3/images/QEMU/empty100G.qcow2.md5sum"
+md5sum "/opt/gns3/images/QEMU/empty100G.qcow2" | awk '{print $1}' | tr -d '\n' > "/opt/gns3/images/QEMU/empty100G.qcow2.md5sum"
 
 gns3_template10=$(curl -s "http://10.0.33.2/images/QEMU/pfSense-CE-2.4.5-RELEASE-p1-amd64.iso.json")
 curl -X POST "http://${GNS3_SERVER}:3080/v2/templates" -d "$gns3_template10"
@@ -157,14 +157,14 @@ tar -x --use-compress-program=pigz -v -f "pfSense-CE-2.6.0-RELEASE-amd64.iso.tar
 rm "pfSense-CE-2.6.0-RELEASE-amd64.iso.tar.gz"
 chown gns3:gns3 "/opt/gns3/images/QEMU/pfSense-CE-2.6.0-RELEASE-amd64.iso"
 chmod 644 "/opt/gns3/images/QEMU/pfSense-CE-2.6.0-RELEASE-amd64.iso"
-md5sum "/opt/gns3/images/QEMU/pfSense-CE-2.6.0-RELEASE-amd64.iso" > "/opt/gns3/images/QEMU/pfSense-CE-2.6.0-RELEASE-amd64.iso.md5sum"
+md5sum "/opt/gns3/images/QEMU/pfSense-CE-2.6.0-RELEASE-amd64.iso" | awk '{print $1}' | tr -d '\n' > "/opt/gns3/images/QEMU/pfSense-CE-2.6.0-RELEASE-amd64.iso.md5sum"
 
 curl "http://10.0.33.2/images/QEMU/empty100G.qcow2.tar.gz" -o "empty100G.qcow2.tar.gz"
 tar -x --use-compress-program=pigz -v -f "empty100G.qcow2.tar.gz" -C "/opt/gns3/images/QEMU"
 rm "empty100G.qcow2.tar.gz"
 chown gns3:gns3 "/opt/gns3/images/QEMU/empty100G.qcow2"
 chmod 644 "/opt/gns3/images/QEMU/empty100G.qcow2"
-md5sum "/opt/gns3/images/QEMU/empty100G.qcow2" > "/opt/gns3/images/QEMU/empty100G.qcow2.md5sum"
+md5sum "/opt/gns3/images/QEMU/empty100G.qcow2" | awk '{print $1}' | tr -d '\n' > "/opt/gns3/images/QEMU/empty100G.qcow2.md5sum"
 
 gns3_template11=$(curl -s "http://10.0.33.2/images/QEMU/pfSense-CE-2.6.0-RELEASE-amd64.iso.json")
 curl -X POST "http://${GNS3_SERVER}:3080/v2/templates" -d "$gns3_template11"
@@ -176,14 +176,14 @@ tar -x --use-compress-program=pigz -v -f "TrueNAS-13.0-U3.iso.tar.gz" -C "/opt/g
 rm "TrueNAS-13.0-U3.iso.tar.gz"
 chown gns3:gns3 "/opt/gns3/images/QEMU/TrueNAS-13.0-U3.iso"
 chmod 644 "/opt/gns3/images/QEMU/TrueNAS-13.0-U3.iso"
-md5sum "/opt/gns3/images/QEMU/TrueNAS-13.0-U3.iso" > "/opt/gns3/images/QEMU/TrueNAS-13.0-U3.iso.md5sum"
+md5sum "/opt/gns3/images/QEMU/TrueNAS-13.0-U3.iso" | awk '{print $1}' | tr -d '\n' > "/opt/gns3/images/QEMU/TrueNAS-13.0-U3.iso.md5sum"
 
 curl "http://10.0.33.2/images/QEMU/empty30G.qcow2.tar.gz" -o "empty30G.qcow2.tar.gz"
 tar -x --use-compress-program=pigz -v -f "empty30G.qcow2.tar.gz" -C "/opt/gns3/images/QEMU"
 rm "empty30G.qcow2.tar.gz"
 chown gns3:gns3 "/opt/gns3/images/QEMU/empty30G.qcow2"
 chmod 644 "/opt/gns3/images/QEMU/empty30G.qcow2"
-md5sum "/opt/gns3/images/QEMU/empty30G.qcow2" > "/opt/gns3/images/QEMU/empty30G.qcow2.md5sum"
+md5sum "/opt/gns3/images/QEMU/empty30G.qcow2" | awk '{print $1}' | tr -d '\n' > "/opt/gns3/images/QEMU/empty30G.qcow2.md5sum"
 
 gns3_template12=$(curl -s "http://10.0.33.2/images/QEMU/TrueNAS-13.0-U3.iso.json")
 curl -X POST "http://${GNS3_SERVER}:3080/v2/templates" -d "$gns3_template12"
@@ -195,7 +195,7 @@ tar -x --use-compress-program=pigz -v -f "Ubuntu_22.04_64bit.vmdk.tar.gz" -C "/o
 rm "Ubuntu_22.04_64bit.vmdk.tar.gz"
 chown gns3:gns3 "/opt/gns3/images/QEMU/Ubuntu_22.04_64bit.vmdk"
 chmod 644 "/opt/gns3/images/QEMU/Ubuntu_22.04_64bit.vmdk"
-md5sum "/opt/gns3/images/QEMU/Ubuntu_22.04_64bit.vmdk" > "/opt/gns3/images/QEMU/Ubuntu_22.04_64bit.vmdk.md5sum"
+md5sum "/opt/gns3/images/QEMU/Ubuntu_22.04_64bit.vmdk" | awk '{print $1}' | tr -d '\n' > "/opt/gns3/images/QEMU/Ubuntu_22.04_64bit.vmdk.md5sum"
 
 gns3_template13=$(curl -s "http://10.0.33.2/images/QEMU/Ubuntu_22.04_64bit.vmdk.json")
 curl -X POST "http://${GNS3_SERVER}:3080/v2/templates" -d "$gns3_template13"
@@ -207,7 +207,7 @@ tar -x --use-compress-program=pigz -v -f "vios_l2-adventerprisek9-m.ssa.high_iro
 rm "vios_l2-adventerprisek9-m.ssa.high_iron_20200929.qcow2.tar.gz"
 chown gns3:gns3 "/opt/gns3/images/QEMU/vios_l2-adventerprisek9-m.ssa.high_iron_20200929.qcow2"
 chmod 644 "/opt/gns3/images/QEMU/vios_l2-adventerprisek9-m.ssa.high_iron_20200929.qcow2"
-md5sum "/opt/gns3/images/QEMU/vios_l2-adventerprisek9-m.ssa.high_iron_20200929.qcow2" > "/opt/gns3/images/QEMU/vios_l2-adventerprisek9-m.ssa.high_iron_20200929.qcow2.md5sum"
+md5sum "/opt/gns3/images/QEMU/vios_l2-adventerprisek9-m.ssa.high_iron_20200929.qcow2" | awk '{print $1}' | tr -d '\n' > "/opt/gns3/images/QEMU/vios_l2-adventerprisek9-m.ssa.high_iron_20200929.qcow2.md5sum"
 
 gns3_template14=$(curl -s "http://10.0.33.2/images/QEMU/vios_l2-adventerprisek9-m.ssa.high_iron_20200929.qcow2.json")
 curl -X POST "http://${GNS3_SERVER}:3080/v2/templates" -d "$gns3_template14"
@@ -219,14 +219,14 @@ tar -x --use-compress-program=pigz -v -f "vios-adventerprisek9-m.spa.159-3.m3.qc
 rm "vios-adventerprisek9-m.spa.159-3.m3.qcow2.tar.gz"
 chown gns3:gns3 "/opt/gns3/images/QEMU/vios-adventerprisek9-m.spa.159-3.m3.qcow2"
 chmod 644 "/opt/gns3/images/QEMU/vios-adventerprisek9-m.spa.159-3.m3.qcow2"
-md5sum "/opt/gns3/images/QEMU/vios-adventerprisek9-m.spa.159-3.m3.qcow2" > "/opt/gns3/images/QEMU/vios-adventerprisek9-m.spa.159-3.m3.qcow2.md5sum"
+md5sum "/opt/gns3/images/QEMU/vios-adventerprisek9-m.spa.159-3.m3.qcow2" | awk '{print $1}' | tr -d '\n' > "/opt/gns3/images/QEMU/vios-adventerprisek9-m.spa.159-3.m3.qcow2.md5sum"
 
 curl "http://10.0.33.2/images/QEMU/IOSv_startup_config.img.tar.gz" -o "IOSv_startup_config.img.tar.gz"
 tar -x --use-compress-program=pigz -v -f "IOSv_startup_config.img.tar.gz" -C "/opt/gns3/images/QEMU"
 rm "IOSv_startup_config.img.tar.gz"
 chown gns3:gns3 "/opt/gns3/images/QEMU/IOSv_startup_config.img"
 chmod 644 "/opt/gns3/images/QEMU/IOSv_startup_config.img"
-md5sum "/opt/gns3/images/QEMU/IOSv_startup_config.img" > "/opt/gns3/images/QEMU/IOSv_startup_config.img.md5sum"
+md5sum "/opt/gns3/images/QEMU/IOSv_startup_config.img" | awk '{print $1}' | tr -d '\n' > "/opt/gns3/images/QEMU/IOSv_startup_config.img.md5sum"
 
 gns3_template15=$(curl -s "http://10.0.33.2/images/QEMU/vios-adventerprisek9-m.spa.159-3.m3.qcow2.json")
 curl -X POST "http://${GNS3_SERVER}:3080/v2/templates" -d "$gns3_template15"
@@ -238,18 +238,19 @@ tar -x --use-compress-program=pigz -v -f "vios-adventerprisek9-m.vmdk.SPA.156-1.
 rm "vios-adventerprisek9-m.vmdk.SPA.156-1.T.tar.gz"
 chown gns3:gns3 "/opt/gns3/images/QEMU/vios-adventerprisek9-m.vmdk.SPA.156-1.T"
 chmod 644 "/opt/gns3/images/QEMU/vios-adventerprisek9-m.vmdk.SPA.156-1.T"
-md5sum "/opt/gns3/images/QEMU/vios-adventerprisek9-m.vmdk.SPA.156-1.T" > "/opt/gns3/images/QEMU/vios-adventerprisek9-m.vmdk.SPA.156-1.T.md5sum"
+md5sum "/opt/gns3/images/QEMU/vios-adventerprisek9-m.vmdk.SPA.156-1.T" | awk '{print $1}' | tr -d '\n' > "/opt/gns3/images/QEMU/vios-adventerprisek9-m.vmdk.SPA.156-1.T.md5sum"
 
 curl "http://10.0.33.2/images/QEMU/IOSv_startup_config.img.tar.gz" -o "IOSv_startup_config.img.tar.gz"
 tar -x --use-compress-program=pigz -v -f "IOSv_startup_config.img.tar.gz" -C "/opt/gns3/images/QEMU"
 rm "IOSv_startup_config.img.tar.gz"
 chown gns3:gns3 "/opt/gns3/images/QEMU/IOSv_startup_config.img"
 chmod 644 "/opt/gns3/images/QEMU/IOSv_startup_config.img"
-md5sum "/opt/gns3/images/QEMU/IOSv_startup_config.img" > "/opt/gns3/images/QEMU/IOSv_startup_config.img.md5sum"
+md5sum "/opt/gns3/images/QEMU/IOSv_startup_config.img" | awk '{print $1}' | tr -d '\n' > "/opt/gns3/images/QEMU/IOSv_startup_config.img.md5sum"
 
 gns3_template16=$(curl -s "http://10.0.33.2/images/QEMU/vios-adventerprisek9-m.vmdk.SPA.156-1.T.json")
 curl -X POST "http://${GNS3_SERVER}:3080/v2/templates" -d "$gns3_template16"
 logger "Installed Cisco IOSv 15.6(1)T"
 
 
+systemctl disable /opt/cloudinitinstall/tbz-gns3-config/src/download-install-gns3-templates.service
 touch /opt/cloudinitinstall/images.installed
